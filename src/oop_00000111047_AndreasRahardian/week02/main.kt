@@ -19,4 +19,15 @@ fun main() {
     } else {
         println("Input NIM tidak valid. Objek tidak dibuat.")
     }
+    println("Pilih Jalur:")
+    println("1. Regular")
+    println("2. Belum pilih jurusan")
+    val choice = scanner.nextInt()
+    scanner.nextLine()
+
+    if (choice == 1) {
+        val student = Student(name, nim, major)
+    } else {
+        val student = Student(name, nim)
+    }
 }
