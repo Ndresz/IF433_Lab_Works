@@ -30,4 +30,22 @@ fun main() {
     } else {
         val student = Student(name, nim)
     }
+
+    print("Judul Buku: ")
+    val title = scanner.nextLine()
+
+    print("Peminjam: ")
+    val borrower = scanner.nextLine()
+
+    print("Lama Pinjam (hari): ")
+    var duration = scanner.nextInt()
+
+    if (duration < 1) {
+        println("Durasi tidak boleh minus. Diubah menjadi 1 hari.")
+        duration = 1
+    }
+
+    val loan = Loan(title, borrower, duration)
+
+    println("Total Denda: Rp ${loan.calculateFine()}")
 }
