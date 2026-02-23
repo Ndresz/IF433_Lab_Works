@@ -1,5 +1,7 @@
 package oop_00000111047_AndreasRahardian.week03
 
+import java.util.function.DoubleUnaryOperator
+
 class Employee(val name: String) {
     var salary: Int = 0
         set(value) {
@@ -21,3 +23,6 @@ fun increasePerformance() {
 fun printStatus(){
     println("Karyawan: $name, Rating: $performanceRating")
 }
+
+val tax: Double
+    get() = salary * 0.1
