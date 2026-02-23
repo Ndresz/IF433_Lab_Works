@@ -11,3 +11,15 @@ fun main() {
 
     println("Pajak yang harus dibayar: ${e.tax}")
 }
+
+fun main() {
+
+    println("--- TEST WEAPON ---")
+    val sword = Weapon("Excalibur")
+
+    sword.damage = -50
+    sword.damage = 9999
+
+    println("Damage: ${sword.damage}")
+    println("Tier: ${sword.tier}")
+}
