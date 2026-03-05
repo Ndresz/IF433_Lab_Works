@@ -12,4 +12,9 @@ fun main() {
     myCar.openTrunk()
     myCar.honk()
     myCar.accelerate()
+
+    val electricCar = ElectricCar("Tesla", 4, 85)
+    electricCar.accelerate()
+    electricCar.honk()
+    electricCar.openTrunk()
 }
