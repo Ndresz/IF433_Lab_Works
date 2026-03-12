@@ -38,6 +38,13 @@ fun main() {
     for (payment in payments) {
         println("Mencoba pembayaran 75000 untuk ${payment.accountName}...")
         payment.processPayment(75000.0)
+
+        if (payment is EWallet && payment.balance < 75000.0) {
+            println("=> Saldo tidak cukup, melakukan top-up otomatis...")
+            payment.topUp(50000.0)
+            println("=> Mencoba ulang pembayaran...")
+            payment.processPayment(75000.0)
+        }
         println()
     }
 }
