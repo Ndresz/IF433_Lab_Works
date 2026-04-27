@@ -5,5 +5,11 @@ fun main() { [cite: 74]
     println("Original Data: $numbers") [cite: 76]
 
     println("\n=== HOF: FILTER ===") [cite: 77]
-    val evens = numbers.filter { it % 2 == 0
+    val evens = numbers.filter { it % 2 == 0 }
     println("Evens only: $evens") [cite: 80]
+
+    println("\n=== HOF: MAP ===") [cite: 84]
+    val multiplied = evens.map { it * 10 } [cite: 86]
+    val asStrings = multiplied.map { "Rp ${it}k" } [cite: 87]
+    println("Multiplied: $multiplied") [cite: 88]
+    println("Formatted: $asStrings") [cite: 89]
