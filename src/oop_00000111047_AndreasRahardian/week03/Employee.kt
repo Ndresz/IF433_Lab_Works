@@ -8,21 +8,22 @@ class Employee(val name: String) {
             if (value < 0) {
                 println("ERROR: Gaji tidak boleh negatif! Di-set ke 0.")
                 field = 0
-            }else {
+            } else {
                 field = value
             }
         }
-}
-private var performanceRating: Int = 3
 
-fun increasePerformance() {
-    performanceRating++
-    println("Kinerjamu $name meningkat! Rating: $performanceRating")
-}
+    private var performanceRating: Int = 3
 
-fun printStatus(){
-    println("Karyawan: $name, Rating: $performanceRating")
-}
+    fun increasePerformance() {
+        performanceRating++
+        println("Kinerjamu $name meningkat! Rating: $performanceRating")
+    }
 
-val tax: Double
-    get() = salary * 0.1
+    fun printStatus() {
+        println("Karyawan: $name, Rating: $performanceRating")
+    }
+
+    val tax: Double
+        get() = salary * 0.1
+}
