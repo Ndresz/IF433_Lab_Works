@@ -24,9 +24,13 @@ fun main() {
     response.data.forEach { coin ->
         println("Coin: ${coin.name} | Balance: ${coin.balance}")
     }
+    // (Jalankan Checkpoint 18 sekarang)
+
+    // 9. Menambahkan Transaksi
     val txRepo = WalletRepository<Transaction>()
     txRepo.add(Transaction("TXN-001", 0.25))
     txRepo.add(Transaction("TXN-002", 1.5))
     println("\nTotal Transaksi dalam Repository: ${txRepo.getAll().size}")
 
+    // (Jalankan Checkpoint 19 sekarang)
 }
