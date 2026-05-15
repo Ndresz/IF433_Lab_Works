@@ -21,3 +21,11 @@ fun main() {
     with(user) {
         println("User Detail -> Nama: $name, Umur: $age")
     }
+
+    println("\n=== TEST COMBINE ===")
+    val newUser = User("Budi", 20).apply {
+        age = 21 // Mengubah umur
+    }.also {
+        println("User baru berhasil dibuat: $it")
+    }
+}
