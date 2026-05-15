@@ -32,4 +32,5 @@ fun main() {
     txRepo.add(Transaction("TXN-002", 1.5))
     println("\nTotal Transaksi dalam Repository: ${txRepo.getAll().size}")
 
+    // (Jalankan Checkpoint 19 sekarang)
 }
