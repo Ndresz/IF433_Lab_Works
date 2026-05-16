@@ -24,4 +24,8 @@ fun main{
     } catch (e: Exception) {
         println("Error: Terjadi kesalahan tidak terrduga.")
     }
+
+    finally {
+        println("Siklus pengecekan disnpenser page selesai.")
+    }
 }
