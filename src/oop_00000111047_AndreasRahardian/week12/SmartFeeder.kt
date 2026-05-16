@@ -28,4 +28,8 @@ fun main{
     finally {
         println("Siklus pengecekan disnpenser page selesai.")
     }
+
+    runCatching {
+        dispenseKibble(requestedGram = 30, availableGram = 1000, isJammed = false)
+    }
 }
